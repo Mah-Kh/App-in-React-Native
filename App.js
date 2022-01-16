@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Dashboard from "./pages/Dashboard";
 import Hospitals from "./pages/Hospitals";
+import FlexBox from "./pages/FlexBox";
 
 export default function App() {
   // const [text, setText] = useState("Welcome! If you are ready please confirm");
@@ -22,8 +23,9 @@ export default function App() {
     // </View>
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="Hospitals" component={Hospitals} />
+        <Stack.Screen name="FlexBox" component={FlexBox} />
+        {/* <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="Hospitals" component={Hospitals} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
