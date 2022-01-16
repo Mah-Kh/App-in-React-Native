@@ -5,9 +5,10 @@ import { StyleSheet, Text, View, Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+// import FlexBox from "./pages/FlexBox";
 import Dashboard from "./pages/Dashboard";
 import Hospitals from "./pages/Hospitals";
-import FlexBox from "./pages/FlexBox";
+import HospitalDetail from "./pages/HospitalDetail";
 
 export default function App() {
   // const [text, setText] = useState("Welcome! If you are ready please confirm");
@@ -23,8 +24,21 @@ export default function App() {
     // </View>
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="Hospitals" component={Hospitals} />
+        <Stack.Screen
+          name="Dashboard"
+          component={Dashboard}
+          options={{ headerTitle: "Dashboard" }}
+        />
+        <Stack.Screen
+          name="Hospitals"
+          component={Hospitals}
+          options={{ headerTitle: "Hospitals" }}
+        />
+        <Stack.Screen
+          name="HospitalDetail"
+          component={HospitalDetail}
+          options={{ headerTitle: "HospitalDetail" }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
