@@ -23,9 +23,8 @@ export default function App() {
     // </View>
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="FlexBox" component={FlexBox} />
-        {/* <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="Hospitals" component={Hospitals} /> */}
+        <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="Hospitals" component={Hospitals} />
       </Stack.Navigator>
     </NavigationContainer>
   );
