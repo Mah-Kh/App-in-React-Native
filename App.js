@@ -9,6 +9,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Dashboard from "./pages/Dashboard";
 import Hospitals from "./pages/Hospitals";
 import HospitalDetail from "./pages/HospitalDetail";
+import Profile from "./pages/Profile";
 
 export default function App() {
   // const [text, setText] = useState("Welcome! If you are ready please confirm");
@@ -38,6 +39,11 @@ export default function App() {
           name="HospitalDetail"
           component={HospitalDetail}
           options={{ headerTitle: "HospitalDetail" }}
+        />
+        <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{ headerTitle: "Profile" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

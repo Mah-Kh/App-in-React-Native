@@ -39,9 +39,9 @@ const Dashboard = (props) => {
       <View style={styles.item}>
         <TouchableOpacity
           style={styles.touchable}
-          onPress={() => props.navigation.navigate("Hospitals")}
+          onPress={() => props.navigation.navigate("Profile")}
         >
-          <Text>5</Text>
+          <Text>Profile</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.item}>
